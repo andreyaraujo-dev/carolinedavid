@@ -95,7 +95,7 @@ export function Contact() {
           ))}
         </div>
 
-        <p className="text-[#8B7265] font-light">Obrigado pela visita.</p>
+        <p className="text-[#8B7265] font-light">Obrigada pela visita.</p>
       </motion.div>
     </section>
   );

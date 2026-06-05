@@ -1,4 +1,3 @@
-import React from "react";
 import { useScroll, useTransform } from "motion/react";
 import "../styles/fonts.css";
 import { Navigation } from "./components/Navigation";
