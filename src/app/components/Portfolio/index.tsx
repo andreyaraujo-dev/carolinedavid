@@ -18,20 +18,17 @@ const DOUTOR_LENTES_IMAGES = [
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-brand-blush">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2
-            className="text-4xl font-light text-[#6B5A50] mb-4"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
+          <h2 className="text-4xl font-light text-brand-sage mb-4">
             Portfolio
           </h2>
 
           <div className="flex items-center justify-center gap-2 mt-4">
-            <div className="w-1 h-1 bg-[#B5918A]"></div>
-            <div className="w-1 h-1 bg-[#B5918A]"></div>
-            <div className="w-1 h-1 bg-[#B5918A]"></div>
+            <div className="w-1 h-1 bg-brand-taupe rounded-full"></div>
+            <div className="w-1 h-1 bg-brand-taupe rounded-full"></div>
+            <div className="w-1 h-1 bg-brand-taupe rounded-full"></div>
           </div>
         </div>
 

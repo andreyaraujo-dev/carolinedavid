@@ -29,11 +29,11 @@ export function Hero({ opacity, scale, onContactClick }: HeroProps) {
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
                 <Minus
-                  className="w-12 h-[2px] text-[#B5918A]"
+                  className="w-12 h-[2px] text-brand-taupe"
                   strokeWidth={1}
                 />
               </motion.div>
-              <div className="inline-flex items-center gap-2 border border-[#D4BFB0]/40 text-[#8B7265] px-4 py-2 rounded-lg">
+              <div className="inline-flex items-center gap-2 border border-brand-taupe/40 text-brand-text-muted px-4 py-2 rounded-lg">
                 <motion.div
                   animate={{ rotate: [0, 360] }}
                   transition={{
@@ -49,8 +49,7 @@ export function Hero({ opacity, scale, onContactClick }: HeroProps) {
             </motion.div>
 
             <motion.h1
-              className="text-5xl lg:text-6xl font-light text-[#6B5A50] leading-tight"
-              style={{ fontFamily: "var(--font-heading)" }}
+              className="text-5xl lg:text-6xl font-light text-brand-sage leading-tight"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
@@ -59,7 +58,7 @@ export function Hero({ opacity, scale, onContactClick }: HeroProps) {
             </motion.h1>
 
             <motion.p
-              className="text-lg text-[#8B7265] leading-relaxed font-light"
+              className="text-lg text-brand-text leading-relaxed font-light"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
@@ -73,7 +72,7 @@ export function Hero({ opacity, scale, onContactClick }: HeroProps) {
 
             <motion.button
               onClick={onContactClick}
-              className="bg-[#B5918A] text-white px-8 py-3 hover:bg-[#A07B74] transition-colors tracking-wide text-sm rounded-lg relative overflow-hidden group"
+              className="bg-brand-taupe text-brand-cream px-8 py-3 hover:bg-brand-taupe-dark transition-colors tracking-wide text-sm rounded-lg relative overflow-hidden group"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.9 }}
@@ -82,7 +81,7 @@ export function Hero({ opacity, scale, onContactClick }: HeroProps) {
             >
               <span className="relative z-10">Vamos Trabalhar Juntos</span>
               <motion.div
-                className="absolute inset-0 bg-[#A07B74]"
+                className="absolute inset-0 bg-brand-taupe-dark"
                 initial={{ x: "-100%" }}
                 whileHover={{ x: 0 }}
                 transition={{ duration: 0.3 }}
@@ -98,13 +97,13 @@ export function Hero({ opacity, scale, onContactClick }: HeroProps) {
             style={{ opacity, scale }}
           >
             <motion.div
-              className="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-[#D4BFB0]/30"
+              className="absolute -top-4 -right-4 w-24 h-24 border-t-2 border-r-2 border-brand-taupe/30"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1 }}
             />
             <motion.div
-              className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-[#D4BFB0]/30"
+              className="absolute -bottom-4 -left-4 w-24 h-24 border-b-2 border-l-2 border-brand-taupe/30"
               initial={{ opacity: 0, scale: 0 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 1.2 }}

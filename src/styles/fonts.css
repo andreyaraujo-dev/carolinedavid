@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
-@import url('https://fonts.cdnfonts.com/css/athena');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300;400;500;600&family=Quicksand:wght@300;400;500;600&display=swap');
 
 :root {
-  --font-heading: 'Athena', serif;
-  --font-body: 'Montserrat', sans-serif;
+  --font-heading: 'Kalnia', serif;
+  --font-body: 'Quicksand', sans-serif;
+
+  --brand-sage: #999B85;
+  --brand-blush: #F0D9D1;
+  --brand-taupe: #B69D8F;
+  --brand-taupe-dark: #A38A7C;
+  --brand-cream: #F4EFEC;
+  --brand-text: #6E6A60;
+  --brand-text-muted: #8A8578;
 }

@@ -19,8 +19,7 @@ export default function App() {
 
   return (
     <div
-      className="min-h-screen bg-[#FAF8F5] relative overflow-hidden"
-      style={{ fontFamily: "var(--font-body)" }}
+      className="min-h-screen bg-brand-cream relative overflow-hidden"
     >
       <Navigation />
       <Hero

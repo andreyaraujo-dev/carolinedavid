@@ -24,16 +24,13 @@ export function Contact() {
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8 }}
       >
-        <h2
-          className="text-4xl font-light text-[#6B5A50] mb-6"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
+        <h2 className="text-4xl font-light text-brand-sage mb-6">
           Vamos Trabalhar Juntos?
         </h2>
 
         <div className="flex items-center justify-center gap-3 mb-8">
           <motion.div
-            className="w-8 h-[1px] bg-[#D4BFB0]"
+            className="w-8 h-[1px] bg-brand-taupe"
             initial={{ width: 0 }}
             whileInView={{ width: 32 }}
             viewport={{ once: true }}
@@ -46,10 +43,10 @@ export function Contact() {
             }}
             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
           >
-            <Sparkles className="w-4 h-4 text-[#B5918A]" />
+            <Sparkles className="w-4 h-4 text-brand-taupe" />
           </motion.div>
           <motion.div
-            className="w-8 h-[1px] bg-[#D4BFB0]"
+            className="w-8 h-[1px] bg-brand-taupe"
             initial={{ width: 0 }}
             whileInView={{ width: 32 }}
             viewport={{ once: true }}
@@ -57,7 +54,7 @@ export function Contact() {
           />
         </div>
 
-        <p className="text-lg text-[#8B7265] mb-12 font-light leading-relaxed">
+        <p className="text-lg text-brand-text mb-12 font-light leading-relaxed">
           Se você procura uma comunicação visual profissional, criativa e
           alinhada à essência da sua marca, será um prazer transformar suas
           ideias em projetos visuais únicos.
@@ -74,14 +71,14 @@ export function Contact() {
                   ? "noopener noreferrer"
                   : undefined
               }
-              className="flex items-center justify-center gap-3 border border-[#D4BFB0]/40 text-[#6B5A50] p-6 hover:border-[#B5918A] transition-colors rounded-lg group"
+              className="flex items-center justify-center gap-3 border border-brand-taupe/40 text-brand-text p-6 hover:border-brand-taupe transition-colors rounded-lg group"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               whileHover={{
                 y: -5,
-                boxShadow: "0 10px 30px rgba(181, 145, 138, 0.15)",
+                boxShadow: "0 10px 30px rgba(182, 157, 143, 0.15)",
               }}
             >
               <motion.div
@@ -95,7 +92,7 @@ export function Contact() {
           ))}
         </div>
 
-        <p className="text-[#8B7265] font-light">Obrigada pela visita.</p>
+        <p className="text-brand-text-muted font-light">Obrigada pela visita.</p>
       </motion.div>
     </section>
   );

@@ -31,17 +31,17 @@ export function PortfolioCaseStudy({
   const cornerLineClasses =
     cornerPosition === "top-left"
       ? {
-          horizontal: "absolute top-0 left-0 w-full h-[1px] bg-[#B5918A]",
-          vertical: "absolute top-0 left-0 w-[1px] h-full bg-[#B5918A]",
+          horizontal: "absolute top-0 left-0 w-full h-[1px] bg-brand-taupe",
+          vertical: "absolute top-0 left-0 w-[1px] h-full bg-brand-taupe",
         }
       : {
-          horizontal: "absolute bottom-0 right-0 w-full h-[1px] bg-[#B5918A]",
-          vertical: "absolute bottom-0 right-0 w-[1px] h-full bg-[#B5918A]",
+          horizontal: "absolute bottom-0 right-0 w-full h-[1px] bg-brand-taupe",
+          vertical: "absolute bottom-0 right-0 w-[1px] h-full bg-brand-taupe",
         };
 
   return (
     <div
-      className={`border border-[#D4BFB0]/30 p-8 lg:p-12 relative rounded-lg ${className}`}
+      className={`border border-brand-taupe/30 p-8 lg:p-12 relative rounded-lg bg-brand-cream/70 ${className}`}
     >
       <div className={cornerClasses}>
         <div className={cornerLineClasses.horizontal}></div>
@@ -49,27 +49,24 @@ export function PortfolioCaseStudy({
       </div>
 
       <div className="mb-12">
-        <h3
-          className="text-3xl font-light text-[#6B5A50] mb-8"
-          style={{ fontFamily: "var(--font-heading)" }}
-        >
+        <h3 className="text-3xl font-light text-brand-sage mb-8">
           {title}
         </h3>
 
         <div className="grid md:grid-cols-2 gap-12 mb-12">
           <div>
-            <h4 className="text-sm font-light mb-3 text-[#B5918A] tracking-wider uppercase">
+            <h4 className="text-sm font-light mb-3 text-brand-taupe tracking-wider uppercase">
               Objetivo
             </h4>
-            <p className="text-[#6B5A50] font-light leading-relaxed">
+            <p className="text-brand-text font-light leading-relaxed">
               {objective}
             </p>
           </div>
           <div>
-            <h4 className="text-sm font-light mb-3 text-[#B5918A] tracking-wider uppercase">
+            <h4 className="text-sm font-light mb-3 text-brand-taupe tracking-wider uppercase">
               Solução
             </h4>
-            <p className="text-[#6B5A50] font-light leading-relaxed">
+            <p className="text-brand-text font-light leading-relaxed">
               {solution}
             </p>
           </div>
@@ -91,14 +88,14 @@ export function PortfolioCaseStudy({
           />
         ))}
         <motion.div
-          className="bg-[#E8DDD5] p-6 flex items-center justify-center text-center rounded-lg"
+          className="bg-brand-blush p-6 flex items-center justify-center text-center rounded-lg"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.5 }}
           whileHover={{ scale: 1.05 }}
         >
-          <p className="text-[#6B5A50] font-light">{footerText}</p>
+          <p className="text-brand-text font-light">{footerText}</p>
         </motion.div>
       </div>
     </div>

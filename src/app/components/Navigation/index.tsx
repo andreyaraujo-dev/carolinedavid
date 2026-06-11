@@ -19,18 +19,18 @@ export function Navigation() {
 
   return (
     <motion.nav
-      className="fixed top-0 w-full bg-[#FAF8F5]/95 backdrop-blur-sm z-50 border-b border-[#D4BFB0]/20"
+      className="fixed top-0 w-full bg-brand-cream/95 backdrop-blur-sm z-50 border-b border-brand-taupe/20"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div
-            className="font-light text-xl text-[#8B7265] tracking-wide"
-            style={{ fontFamily: "var(--font-heading)" }}
-          >
-            Caroline David
+          <div className="flex items-center gap-2">
+            <img src="/icon.png" alt="Caroline David" className="h-8 w-auto" />
+            <span className="font-light text-xl text-brand-sage tracking-wide" style={{ fontFamily: "var(--font-heading)" }}>
+              Caroline David
+            </span>
           </div>
 
           <div className="hidden md:flex gap-8">
@@ -38,7 +38,7 @@ export function Navigation() {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-[#8B7265] hover:text-[#B5918A] transition-colors text-sm tracking-wide"
+                className="text-brand-text-muted hover:text-brand-taupe transition-colors text-sm tracking-wide"
               >
                 {item.label}
               </button>
@@ -46,7 +46,7 @@ export function Navigation() {
           </div>
 
           <button
-            className="md:hidden text-[#8B7265]"
+            className="md:hidden text-brand-text-muted"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-expanded={mobileMenuOpen}
             aria-label={mobileMenuOpen ? "Fechar menu" : "Abrir menu"}
@@ -66,7 +66,7 @@ export function Navigation() {
         {mobileMenuOpen && (
           <motion.div
             key="mobile-menu"
-            className="md:hidden bg-[#FAF8F5] border-t border-[#D4BFB0]/20 overflow-hidden"
+            className="md:hidden bg-brand-cream border-t border-brand-taupe/20 overflow-hidden"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
@@ -77,7 +77,7 @@ export function Navigation() {
                 <motion.button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left py-2 text-[#8B7265] hover:text-[#B5918A]"
+                  className="block w-full text-left py-2 text-brand-text-muted hover:text-brand-taupe"
                   initial={{ opacity: 0, x: -12 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -12 }}
