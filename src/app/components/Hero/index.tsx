@@ -110,7 +110,7 @@ export function Hero({ opacity, scale, onContactClick }: HeroProps) {
             />
 
             <motion.img
-              src="https://images.unsplash.com/photo-1626785774573-4b799315345d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+              src="/perfil.jpeg"
               alt="Workspace de design"
               className="w-full h-[500px] object-cover"
               whileHover={{ scale: 1.02 }}

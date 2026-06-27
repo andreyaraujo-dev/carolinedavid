@@ -1,24 +1,35 @@
 import { PortfolioCaseStudy } from "../PortfolioCaseStudy";
 
 const VIVA_IMAGES = [
-  "https://images.unsplash.com/photo-1683721003111-070bcc053d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1724862936518-ae7fcfc052c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1561070791-2526d30994b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  "/clinica-viva/1.png",
+  "/clinica-viva/6.png",
+  "/clinica-viva/3.png",
+  "/clinica-viva/4.png",
+  "/clinica-viva/5.png",
 ];
 
 const DOUTOR_LENTES_IMAGES = [
-  "https://images.unsplash.com/photo-1626785774573-4b799315345d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1683721003111-070bcc053d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1724862936518-ae7fcfc052c1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-  "https://images.unsplash.com/photo-1626785774625-ddcddc3445e9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+  "/doutor-lentes/1.png",
+  "/doutor-lentes/2.png",
+  "/doutor-lentes/3.png",
+  "/doutor-lentes/4.png",
+  "/doutor-lentes/5.png",
+];
+
+const LIVIA_MENESES_IMAGES = [
+  "/livia-meneses/1.png",
+  "/livia-meneses/2.png",
+  "/livia-meneses/3.png",
+  "/livia-meneses/4.png",
+  "/livia-meneses/5.png",
 ];
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="py-20 px-4 sm:px-6 lg:px-8 bg-brand-blush">
+    <section
+      id="portfolio"
+      className="py-20 px-4 sm:px-6 lg:px-8 bg-brand-blush"
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-light text-brand-sage mb-4">
@@ -53,6 +64,18 @@ export function Portfolio() {
           hoverRotate={-2}
           cornerPosition="bottom-right"
           footerText="Campanhas e materiais promocionais"
+          className="mb-12"
+        />
+
+        <PortfolioCaseStudy
+          title="Livia Meneses — Nutricionista"
+          objective="Construir uma presença digital acolhedora e profissional, transmitindo credibilidade e proximidade com o público."
+          solution="Criação de conteúdos informativos sobre nutrição, posts educativos e materiais visuais alinhados à identidade pessoal da profissional."
+          images={LIVIA_MENESES_IMAGES}
+          imageAltPrefix="Livia Meneses design"
+          hoverRotate={2}
+          cornerPosition="top-left"
+          footerText="Conteúdos educativos e informativos"
         />
       </div>
     </section>

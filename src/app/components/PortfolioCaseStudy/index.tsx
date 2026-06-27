@@ -73,22 +73,26 @@ export function PortfolioCaseStudy({
         </div>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {images.map((src, idx) => (
-          <motion.img
+          <motion.div
             key={idx}
-            src={src}
-            alt={`${imageAltPrefix} ${idx + 1}`}
-            className="w-full h-64 object-cover rounded-lg"
+            className="aspect-[4/5] w-full overflow-hidden rounded-lg bg-white/50 shadow-sm"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: idx * 0.1 }}
             whileHover={{ scale: 1.05, rotate: hoverRotate }}
-          />
+          >
+            <img
+              src={src}
+              alt={`${imageAltPrefix} ${idx + 1}`}
+              className="w-full h-full object-contain"
+            />
+          </motion.div>
         ))}
         <motion.div
-          className="bg-brand-blush p-6 flex items-center justify-center text-center rounded-lg"
+          className="aspect-[4/5] bg-brand-blush p-6 flex items-center justify-center text-center rounded-lg shadow-sm"
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
